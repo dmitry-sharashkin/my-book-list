@@ -1,6 +1,7 @@
 import React from "react";
 
 import { NavLink } from "react-router-dom";
+// TODO: replace by alias
 import logo from "../../../../assets/icons/book-logo.svg";
 
 import styles from "./styles.module.scss";
