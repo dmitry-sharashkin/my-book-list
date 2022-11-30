@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Routes, Route, Link } from "react-router-dom";
-import BaseLayout from "./components/layout/BaseLayout";
+import BaseLayout from "./components/layout/BaseLayout/BaseLayout";
 
 function App() {
   return (

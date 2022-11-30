@@ -1,0 +1,24 @@
+.container {
+  background-color: #343434;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  //  TODO: add to css variable
+  height: 50px;
+  .logoTitle {
+    font-weight: 600;
+    font-size: 1.2rem;
+    //  TODO: add to css variable
+    color: #fff;
+    margin-left: 8px;
+  }
+  .logoIcon {
+    width: 30px;
+    height: 30px;
+  }
+}
