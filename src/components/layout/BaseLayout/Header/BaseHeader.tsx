@@ -1,12 +1,9 @@
 import React from "react";
 
-import { NavLink } from "react-router-dom";
-// TODO: replace by alias
-import logo from "../../../../assets/icons/book-logo.svg";
-
-// import logo from "@assets/icons/logo.svg";
-
 import styles from "./styles.module.scss";
+import logo from "@assets/icons/book-logo.svg";
+
+import { NavLink } from "react-router-dom";
 
 export default function BaseHeader() {
   return (
