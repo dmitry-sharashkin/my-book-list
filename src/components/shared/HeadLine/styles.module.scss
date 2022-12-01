@@ -1,0 +1,12 @@
+.container {
+  flex: 1;
+  border-left: 0.3125rem solid var(--headline-border-color);
+  font-size: 0.9375rem;
+  line-height: 1.875rem;
+  padding: 0 0.625rem;
+  margin-bottom: 0.625rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: car(--headline-color);
+  background-color: var(--headline-background-color);
+}
