@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 // TODO: replace by alias
 import logo from "../../../../assets/icons/book-logo.svg";
 
+// import logo from "@assets/icons/logo.svg";
+
 import styles from "./styles.module.scss";
 
 export default function BaseHeader() {
@@ -14,7 +16,7 @@ export default function BaseHeader() {
           <img src={logo} alt="logo" className={styles.logoIcon} />
           <span className={styles.logoTitle}>My book list </span>
         </NavLink>
-        <ul>
+        {/* <ul>
           <li>
             <NavLink to={"/"}>Home </NavLink>
           </li>
@@ -28,7 +30,7 @@ export default function BaseHeader() {
           <li>
             <NavLink to={"/404"}>404 </NavLink>
           </li>
-        </ul>
+        </ul> */}
       </header>
     </>
   );
