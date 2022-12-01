@@ -1,0 +1,7 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(243, 243, 243, 0.85);
+  padding: 0 15px;
+  min-height: calc(100vh - var(--header-height));
+}
