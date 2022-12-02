@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 import HeadLine from "@components/shared/HeadLine/HeadLine";
 import styles from "./styles.module.scss";
 import { IBook, ReadStatusEnum } from "shared/types/book.interface";
 import Table from "@components/shared/Table/Table";
+import Form from "@components/shared/Form/Rorm";
 
 const bookDataRead: IBook[] = [
   {
@@ -19,11 +20,17 @@ const bookDataRead: IBook[] = [
 ];
 
 export default function BookList() {
+  const [readData, setReadData] = useState(bookDataRead);
+  function addReadBook(formData: any) {
+    setReadData((prev) => [...prev, formData]);
+  }
   return (
     <div className={styles.container}>
-      {/* <HeadLine>{"Добавить в список"}</HeadLine> */}
+      <HeadLine>{"Добавить в список"}</HeadLine>
+      <Form onFormSubmit={addReadBook} />
+
       <HeadLine>{ReadStatusEnum.planned}</HeadLine>
-      <Table data={bookDataRead} />
+      <Table data={readData} />
       <HeadLine>{ReadStatusEnum.read}</HeadLine>
       <HeadLine>{ReadStatusEnum.reread}</HeadLine>
       <HeadLine>{ReadStatusEnum.alreadyRead}</HeadLine>
