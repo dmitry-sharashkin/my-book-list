@@ -1,0 +1,36 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.tableHead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border-color);
+}
+th {
+  padding-bottom: 5px;
+  color: var(--table-head-color);
+  font-weight: bold;
+  text-align: left;
+}
+td {
+  border: 0 none;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: 1.65;
+  margin: 0;
+  outline: 0 none;
+  padding: 0;
+}
+.index {
+  color: var(--muted-color);
+  padding-right: 5px;
+  width: 1.875rem;
+  text-align: center;
+}
+.sizeLimited {
+  text-align: center;
+  width: 4.375rem;
+}

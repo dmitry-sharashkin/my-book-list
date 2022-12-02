@@ -23,7 +23,8 @@
       "@pages/*": ["pages/*"],
       "@services/*": ["services/*"],
       "@store/*": ["store/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@shared/*": ["shared/*"]
     }
   },
   "include": ["src"]

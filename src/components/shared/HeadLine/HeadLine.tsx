@@ -2,17 +2,12 @@ import React from "react";
 
 import styles from "./styles.module.scss";
 
-type headLineType = "default" | "link" | "control";
-
-interface IHeadLine {
-  type?: headLineType;
-  heading: string;
-  controls?: any;
-  link?: string;
+export interface IHeadLine {
+  children: React.ReactNode;
 }
 
 export default function HeadLine(props: IHeadLine) {
-  const { type = "default", heading, controls, link } = props;
+  const { children } = props;
 
-  return <div className={styles.container}>{heading}</div>;
+  return <div className={styles.container}>{children}</div>;
 }

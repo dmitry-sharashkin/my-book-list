@@ -11,6 +11,8 @@ export interface IBook {
   type: string;
   status: ReadStatusEnum;
   myRating?: number;
+  chaptersRead?: number;
+  chapters: number;
   communityRating?: number;
   image: string;
 }
